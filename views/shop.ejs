@@ -1,0 +1,47 @@
+<%- include('includes/head.ejs') %>
+  <link rel="stylesheet" href="/css/product.css">
+
+
+  </head>
+
+  <body>
+    <%- include('includes/nav.ejs')%>
+      <main class="text-center">
+        <h3>My Products</h1>
+<br>
+        <% if (prods.length> 0){ %>
+          <div class="row">
+
+            <% for (let product of prods) {%>
+              <div class="col-sm">
+              <article class="card product-item ">
+             
+                <header class="card__header">
+                  <h1 class="product__title"><%= product.title %></h1>
+                </header>
+
+                <div class="card__content">
+                  <h2 class="product__price"><%= product.price %></h2>
+                  <p class="product__description"><%= product.description %>
+                </div>
+
+                <div class="card__actions m-3">
+                  <button class="btn btn-success">Add to Cart</button>
+                </div></div>
+                <% } %>
+              </article>
+          </div>
+
+          <% } else { %>
+            <br>
+            <div class="container">
+              <div class="jumbotron">
+                <h1>Oops!</h1>
+                <p>There are no current books listed. Let's add some!</p>
+                <a class="btn" href="/admin/add-product">Add Product</a>
+              </div>
+            </div>
+            <% } %>
+
+      </main>
+      <%- include('includes/end.ejs')%>
