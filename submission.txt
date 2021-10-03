@@ -1,0 +1,27 @@
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://quiet-plains-82680.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/angie-garciapaz/02proveassingment
+
+3. Briefly list and describe the elements of the application that are functioning. 
+The user is able to add a book that includes the name, price, and a short description.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+I wanted the user to be able to add an image but the images never showed.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+I definitely am glad we are learning EJS and not pug or handlebars. EJS is much better and closer to everything else I’ve learned
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+I found the videos to be helpful so nothing this week.
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements
+   5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+This assignment meets the basic requirements of allowing a user to add a product. Currently, the user is able to fill out the name, price, and description. However, in the future they should be able to delete an item.
