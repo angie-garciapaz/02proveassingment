@@ -1,0 +1,107 @@
+2021-10-03T03:08:49.157281+00:00 heroku[web.1]: State changed from crashed to starting
+2021-10-03T03:08:51.447230+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-10-03T03:08:53.011848+00:00 app[web.1]: 
+2021-10-03T03:08:53.011887+00:00 app[web.1]: > cse341-02@1.0.0 start /app
+2021-10-03T03:08:53.011888+00:00 app[web.1]: > node app.js
+2021-10-03T03:08:53.011888+00:00 app[web.1]: 
+2021-10-03T03:08:53.193948+00:00 app[web.1]: Im listening on port 3000
+2021-10-03T03:09:23.138770+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=agp-ecom.herokuapp.com request_id=9af8d9ba-d0f8-4a95-b4c1-c1fbc8952db0 fwd="216.21.211.100" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-03T03:09:51.916000+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2021-10-03T03:09:52.024981+00:00 heroku[web.1]: Stopping process with SIGKILL
+2021-10-03T03:09:52.215817+00:00 heroku[web.1]: Process exited with status 137
+2021-10-03T03:09:52.289525+00:00 heroku[web.1]: State changed from starting to crashed
+2021-10-03T03:09:54.337208+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=agp-ecom.herokuapp.com request_id=15dc759c-09b2-43dd-97d7-1050f7e6aed5 fwd="216.21.211.100" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-03T03:13:25.000000+00:00 app[api]: Build started by user gar11043@byui.edu
+2021-10-03T03:13:45.621610+00:00 app[api]: Deploy 52e19fe3 by user gar11043@byui.edu
+2021-10-03T03:13:45.621610+00:00 app[api]: Release v5 created by user gar11043@byui.edu
+2021-10-03T03:13:46.000000+00:00 app[api]: Build succeeded
+2021-10-03T03:13:46.557261+00:00 heroku[web.1]: State changed from crashed to starting
+2021-10-03T03:13:48.444501+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-10-03T03:13:49.272814+00:00 app[web.1]: 
+2021-10-03T03:13:49.272827+00:00 app[web.1]: > cse341-02@1.0.0 start /app
+2021-10-03T03:13:49.272827+00:00 app[web.1]: > node app.js
+2021-10-03T03:13:49.272827+00:00 app[web.1]: 
+2021-10-03T03:13:49.369246+00:00 app[web.1]: Im listening on port 3000
+2021-10-03T03:14:48.624645+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2021-10-03T03:14:49.214060+00:00 heroku[web.1]: Stopping process with SIGKILL
+2021-10-03T03:14:49.470278+00:00 heroku[web.1]: Process exited with status 137
+2021-10-03T03:14:49.666427+00:00 heroku[web.1]: State changed from starting to crashed
+2021-10-03T03:14:58.000000+00:00 app[api]: Build started by user gar11043@byui.edu
+2021-10-03T03:15:18.801328+00:00 app[api]: Release v6 created by user gar11043@byui.edu
+2021-10-03T03:15:18.801328+00:00 app[api]: Deploy 24e3f122 by user gar11043@byui.edu
+2021-10-03T03:15:19.000000+00:00 app[api]: Build succeeded
+2021-10-03T03:15:20.149647+00:00 heroku[web.1]: State changed from crashed to starting
+2021-10-03T03:15:22.308509+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-10-03T03:15:23.449655+00:00 app[web.1]: 
+2021-10-03T03:15:23.449671+00:00 app[web.1]: > cse341-02@1.0.0 start /app
+2021-10-03T03:15:23.449671+00:00 app[web.1]: > node app.js
+2021-10-03T03:15:23.449671+00:00 app[web.1]: 
+2021-10-03T03:15:23.618569+00:00 app[web.1]: Im listening on port 3000
+2021-10-03T03:16:22.827031+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2021-10-03T03:16:22.901804+00:00 heroku[web.1]: Stopping process with SIGKILL
+2021-10-03T03:16:23.097299+00:00 heroku[web.1]: Process exited with status 137
+2021-10-03T03:16:23.165249+00:00 heroku[web.1]: State changed from starting to crashed
+2021-10-03T03:16:47.000000+00:00 app[api]: Build started by user gar11043@byui.edu
+2021-10-03T03:17:09.309936+00:00 app[api]: Deploy 6d73d5e0 by user gar11043@byui.edu
+2021-10-03T03:17:09.309936+00:00 app[api]: Release v7 created by user gar11043@byui.edu
+2021-10-03T03:17:10.000000+00:00 app[api]: Build succeeded
+2021-10-03T03:17:10.288175+00:00 heroku[web.1]: State changed from crashed to starting
+2021-10-03T03:17:12.327763+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-10-03T03:17:13.263391+00:00 app[web.1]: 
+2021-10-03T03:17:13.263419+00:00 app[web.1]: > cse341-02@1.0.0 start /app
+2021-10-03T03:17:13.263419+00:00 app[web.1]: > node app.js
+2021-10-03T03:17:13.263419+00:00 app[web.1]: 
+2021-10-03T03:17:13.375561+00:00 app[web.1]: Im listening on port 3000
+2021-10-03T03:18:12.749190+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2021-10-03T03:18:14.085727+00:00 heroku[web.1]: Stopping process with SIGKILL
+2021-10-03T03:18:14.126436+00:00 app[web.1]: Error waiting for process to terminate: No child processes
+2021-10-03T03:18:14.250263+00:00 heroku[web.1]: Process exited with status 22
+2021-10-03T03:18:14.294807+00:00 heroku[web.1]: State changed from starting to crashed
+2021-10-03T03:30:42.048143+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=agp-ecom.herokuapp.com request_id=d955ae60-e029-425a-869e-173eadbc1ca3 fwd="216.21.211.100" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-03T03:30:43.053337+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=agp-ecom.herokuapp.com request_id=aafe4d5b-3876-41ea-9a09-c4ca66051079 fwd="216.21.211.100" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-03T03:33:37.000000+00:00 app[api]: Build started by user gar11043@byui.edu
+2021-10-03T03:33:57.526189+00:00 app[api]: Release v8 created by user gar11043@byui.edu
+2021-10-03T03:33:57.526189+00:00 app[api]: Deploy e3b0d063 by user gar11043@byui.edu
+2021-10-03T03:33:57.791663+00:00 heroku[web.1]: State changed from crashed to starting
+2021-10-03T03:33:58.000000+00:00 app[api]: Build succeeded
+2021-10-03T03:34:00.390138+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-10-03T03:34:02.262652+00:00 app[web.1]: 
+2021-10-03T03:34:02.262668+00:00 app[web.1]: > cse341-02@1.0.0 start /app
+2021-10-03T03:34:02.262669+00:00 app[web.1]: > node app.js
+2021-10-03T03:34:02.262669+00:00 app[web.1]: 
+2021-10-03T03:34:02.470151+00:00 app[web.1]: Im listening on port 3000
+2021-10-03T03:35:01.359311+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2021-10-03T03:35:01.404240+00:00 heroku[web.1]: Stopping process with SIGKILL
+2021-10-03T03:35:01.587150+00:00 heroku[web.1]: Process exited with status 137
+2021-10-03T03:35:01.648532+00:00 heroku[web.1]: State changed from starting to crashed
+2021-10-03T03:35:01.651787+00:00 heroku[web.1]: State changed from crashed to starting
+2021-10-03T03:35:03.907340+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-10-03T03:35:04.941890+00:00 app[web.1]: 
+2021-10-03T03:35:04.941903+00:00 app[web.1]: > cse341-02@1.0.0 start /app
+2021-10-03T03:35:04.941904+00:00 app[web.1]: > node app.js
+2021-10-03T03:35:04.941904+00:00 app[web.1]: 
+2021-10-03T03:35:05.055658+00:00 app[web.1]: Im listening on port 3000
+2021-10-03T03:35:25.156957+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=agp-ecom.herokuapp.com request_id=1e8a7361-157b-4705-acb3-8984be947e0e fwd="216.21.211.100" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-03T03:36:04.010123+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2021-10-03T03:36:04.363442+00:00 heroku[web.1]: Stopping process with SIGKILL
+2021-10-03T03:36:04.509582+00:00 heroku[web.1]: Process exited with status 137
+2021-10-03T03:36:04.606704+00:00 heroku[web.1]: State changed from starting to crashed
+2021-10-03T03:36:08.231174+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=agp-ecom.herokuapp.com request_id=1743342d-0a18-404b-b4db-2175e1f79477 fwd="216.21.211.100" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-03T03:39:16.000000+00:00 app[api]: Build started by user gar11043@byui.edu
+2021-10-03T03:39:38.010960+00:00 app[api]: Release v9 created by user gar11043@byui.edu
+2021-10-03T03:39:38.010960+00:00 app[api]: Deploy 6bd3c5a2 by user gar11043@byui.edu
+2021-10-03T03:39:38.414859+00:00 heroku[web.1]: State changed from crashed to starting
+2021-10-03T03:39:39.000000+00:00 app[api]: Build succeeded
+2021-10-03T03:39:40.334056+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-10-03T03:39:42.342677+00:00 app[web.1]: 
+2021-10-03T03:39:42.342691+00:00 app[web.1]: > cse341-02@1.0.0 start /app
+2021-10-03T03:39:42.342691+00:00 app[web.1]: > node app.js
+2021-10-03T03:39:42.342691+00:00 app[web.1]: 
+2021-10-03T03:39:42.451360+00:00 app[web.1]: Im listening on port 3000
+2021-10-03T03:40:41.569324+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2021-10-03T03:40:41.641281+00:00 heroku[web.1]: Stopping process with SIGKILL
+2021-10-03T03:40:41.784998+00:00 heroku[web.1]: Process exited with status 22
+2021-10-03T03:40:41.822529+00:00 heroku[web.1]: State changed from starting to crashed
+2021-10-03T03:40:41.668386+00:00 app[web.1]: Error waiting for process to terminate: No child processes
+2021-10-03T03:40:42.852241+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=agp-ecom.herokuapp.com request_id=f33efd3d-1a87-45a3-b96b-a9a72b772f8b fwd="216.21.211.100" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-03T03:40:43.653616+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=agp-ecom.herokuapp.com request_id=67b73b69-b13d-4a12-a736-b95997165b5a fwd="216.21.211.100" dyno= connect= service= status=503 bytes= protocol=https
