@@ -23,4 +23,4 @@ app.use((req, res, next) => {
 });
 
 // always on the bottom
-app.listen(3000);
+listen(process.env.PORT || 5000);
