@@ -22,7 +22,7 @@ app.use(shopRoutes);
 app.use(errorController.get404);
 
 // always on the bottom
-app.listen(3000);
+// app.listen(3000);
 
 // only use for Heroku
-// app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000);
