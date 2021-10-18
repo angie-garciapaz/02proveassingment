@@ -29,11 +29,11 @@
                       </h2>
                       <p>
                         <%= product.description %>
-                        </p>
+                      </p>
                     </div>
 
                     <div class="card-footer text-center bg-white border-top-0">
-                      <button class="addBtn">Add to Cart</button>
+                      <%- include('../includes/add-to-cart.ejs', {product: product})%>
                     </div>
                 </div>
                 <% } %>

@@ -31,10 +31,9 @@
                         <%= product.description %>
                     </div>
 
-                    <div class="card-footer text-center bg-white border-top-0">
-                      <form action="/add-to-cart/:productId" method="POST">
-                      <button class="addBtn">Add to Cart</button>
-                    </form>
+                    <div class="card-footer d-flex justify-content-around bg-white border-top-0">
+                      <a href="/products/<%= product.id %>" class="detBtn">Details</a>
+                      <%- include('../includes/add-to-cart.ejs', {product: product})%>
                     </div>
                 </div>
                 <% } %>

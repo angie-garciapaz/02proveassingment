@@ -7,6 +7,31 @@
   <body>
     <%- include('../includes/nav.ejs')%>
       <main class="container">
-      <p>product detail</p>
+        <div class="row">
+          <div class="col">
+            <h1>
+              <%= product.title %>
+            </h1>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-6">
+            <img src="<%= product.imageUrl %>" alt="<%= product.title %>" style="width: 500px;">
+
+          </div>
+          <div class="col-6 text-center d-flex align-items-center flex-column justify-content-center">
+            <h2>
+              <%= product.price %>
+            </h2>
+            <p>
+              <%= product.description %>
+            </p>
+
+            <%- include('../includes/add-to-cart.ejs')%>
+
+          </div>
+        </div>
+
       </main>
       <%- include('../includes/end.ejs')%>
