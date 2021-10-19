@@ -1,0 +1,26 @@
+After completing the assignment, be sure to push to Github and Heroku.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://quiet-plains-82680.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/angie-garciapaz/02proveassingment
+
+3. Briefly list and describe the elements of the application that are functioning. 
+Everything is working so far. I do get a 500 Error occasionally because of my favicon or my css.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+Everything is working so far. I did want to be able to route everything by weekly assignments but I wasn't able to figure that out.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The coolest thing was being able to add a product to a cart and delete it.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+I don't understand how to progress with my homework without overwritting what I've done in previous weeks.
+
+7. Please select the category you feel best describes your assignment:
+5
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I believe I went above and beyond in the styling of the site. It not only functions but it looks great as well.
