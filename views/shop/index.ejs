@@ -23,7 +23,8 @@
                       <p><%= product.description %></p>
                     </div>
 
-                    <div class="card-footer text-center bg-white border-top-0">
+                    <div class="card-footer text-center bg-white border-top-0 d-flex justify-content-around">
+                      <a href="/products/<%= product._id %>" class="detBtn">Details</a>
                       <%- include('../includes/add-to-cart.ejs', {product: product})%>
                     </div>
                 </div>

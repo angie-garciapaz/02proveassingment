@@ -9,15 +9,19 @@
         <%if (products.length> 0){ %>
             <% products.forEach(p=> { %>
            <div class="d-flex justify-content-between">
-                <p><%= p.productData.title %></p>
-                <p>Quantity: <%= p.qty %></p>
+                <p><%= p.title %></p>
+                <p>Quantity: <%= p.quantity %></p>
                 <form action="/cart-delete-item" method="post">
-                  <input type="hidden" value="<%= p.productData.id %>" name="productId">
+                  <input type="hidden" value="<%= p._id %>" name="productId">
                 <button type="submit" class="delBtn">delete</button></form>
               </div>
               <hr>
               <%})%>
-        
+        <div class="d-flex justify-content-end">
+          <form action="/create-order" method="POST">
+            <button type="submit" class="addBtn mt-5">Order Now!</button>
+        </form>
+        </div>
           <%} else {%>
             <h3>Empty Cart  :(</h3>
             <%}%>
