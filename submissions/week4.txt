@@ -2,16 +2,22 @@ After completing the assignment, be sure to push to Github and Heroku.
 Please answer the questions in this text file and submit it to I-Learn.
 
 1. Copy and paste the URL for your web application (e.g., Heroku):
+https://quiet-plains-82680.herokuapp.com/
 
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/angie-garciapaz/02proveassingment
 
 3. Briefly list and describe the elements of the application that are functioning. 
+A user is able to create, read, update, and delete an item. They are able to view their items in a cart.
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
+The order page doesn't match the rest of the UI and will need to be updated, otherwise it work.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The coolest thing is that it connects to Mongodb and my shop is coming together.
 
 6. If you could change this assignment to be more effective or helpful, what would you change?
+I would change the order page and have it appear like Amazon or Zara. 
 
 7. Please select the category you feel best describes your assignment:
    1 - Some attempt was made
@@ -20,4 +26,7 @@ Please answer the questions in this text file and submit it to I-Learn.
    4 - Meets requirements
    5 - Shows creativity and excels above and beyond requirements
 
+4
+
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+I'm behind on my assignments so I merely met the requirements for the assignments.
