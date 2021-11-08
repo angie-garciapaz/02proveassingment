@@ -1,5 +1,5 @@
 <%- include('../includes/head.ejs') %>
-</head>
+  </head>
 
   <body>
     <%- include('../includes/nav.ejs')%>
@@ -19,13 +19,18 @@
                     <img src=" <%= product.imageUrl %>" alt="<%= product.title %>" class="card-img-top">
 
                     <div class="card-body">
-                      <h2>$<%= product.price %></h2>
-                      <p><%= product.description %></p>
+                      <h2>$<%= product.price %>
+                      </h2>
+                      <p>
+                        <%= product.description %>
+                      </p>
                     </div>
 
                     <div class="card-footer text-center bg-white border-top-0 d-flex justify-content-around">
                       <a href="/products/<%= product._id %>" class="detBtn">Details</a>
-                      <%- include('../includes/add-to-cart.ejs', {product: product})%>
+                      <% if (isAuthenticated) { %>
+                        <%- include('../includes/add-to-cart.ejs', {product: product})%>
+                          <% } %>
                     </div>
                 </div>
                 <% } %>

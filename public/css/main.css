@@ -9,7 +9,7 @@ main {
   padding: 1rem;
 }
 
-.active{
+.active {
   font-weight: 700;
 }
 
@@ -106,7 +106,7 @@ div#line1 {
   color: white;
 }
 
-.detBtn{
+.detBtn {
   background-color: transparent;
   border: 2px solid aquamarine;
   color: #343a40;
@@ -118,8 +118,25 @@ div#line1 {
   text-decoration: none;
 }
 
-.detBtn:hover{
+.detBtn:hover {
   background-color: aquamarine;
   text-decoration: none;
   color: black;
+}
+
+#logOut-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-style: none;
+  border-color: transparent;
+}
+
+#logOut-btn:hover {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+#logOut-btn:focus {
+  outline: none;
 }

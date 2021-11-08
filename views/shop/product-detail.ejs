@@ -1,5 +1,5 @@
 <%- include('../includes/head.ejs') %>
-</head>
+  </head>
 
   <body>
     <%- include('../includes/nav.ejs')%>
@@ -24,9 +24,9 @@
             <p>
               <%= product.description %>
             </p>
-
-            <%- include('../includes/add-to-cart.ejs')%>
-
+            <% if (isAuthenticated) { %>
+              <%- include('../includes/add-to-cart.ejs', {product: product})%>
+              <% } %>
           </div>
         </div>
 

@@ -30,7 +30,9 @@
 
                     <div class="card-footer d-flex justify-content-around bg-white border-top-0">
                       <a href="/products/<%= product._id %>" class="detBtn">Details</a>
+                      <% if (isAuthenticated) { %>
                       <%- include('../includes/add-to-cart.ejs', {product: product})%>
+                      <% } %>
                     </div>
                 </div>
                 <% } %>
