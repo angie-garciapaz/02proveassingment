@@ -30,7 +30,10 @@
                     <div class="card-footer bg-white border-top-0 d-flex justify-content-around">
                       <a href="/admin/edit-product/<%= product._id %>?edit=true" class="addBtn">Edit Cart</a>
                       <form action="/admin/delete-product" method="POST">
+
                         <input type="hidden" value="<%= product._id %>" name="productId">
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
                         <button class="delBtn" type="submit">Delete</button>
                       </form>
                     </div>

@@ -43,6 +43,7 @@
                 <li>
                     <!-- make it look like a link. also an if user is logged in -->
                     <form action="/logout" method="post">
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                         <button type="submit" id="logOut-btn">Logout</button>
                     </form>
                 </li>
@@ -51,6 +52,10 @@
                     <% if (!isAuthenticated) { %>
                         <li>
                             <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
+                        </li>
+
+                        <li>
+                            <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">Signup</a>
                         </li>
                         <% } %>
         </ul>
