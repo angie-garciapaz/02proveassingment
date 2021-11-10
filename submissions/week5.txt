@@ -2,22 +2,32 @@ After completing the assignment, be sure to push to Github and Heroku.
 Please answer the questions in this text file and submit it to I-Learn.
 
 1. Copy and paste the URL for your web application (e.g., Heroku):
+https://quiet-plains-82680.herokuapp.com/
 
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/angie-garciapaz/02proveassingment
 
 3. Briefly list and describe the elements of the application that are functioning. 
+The user is able to sign up and receive a 'Sign Up Successfully' email.. The user is also able to experience 
+feedback if their email or password is typed incorrectly.
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
+To my knowledge everything works accordingly.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The coolest thing was being able to sign up for sendgrid and send emails! However, it would get sent to my spam folder so in the future
+I will need to find a more reliable or reputable provider.
 
 6. If you could change this assignment to be more effective or helpful, what would you change?
+Everything from this lesson was great.
 
 7. Please select the category you feel best describes your assignment:
    1 - Some attempt was made
    2 - Developing, but significantly deficient
    3 - Slightly deficient, but still mostly adequate
-   4 - Meets requirements
+*** 4 - Meets requirements*********
    5 - Shows creativity and excels above and beyond requirements
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+I'm still behind on my assignments and for this assigment I only met the requirements. It would be nice to add user feedback
+in the form inputs if an image is invalid.
