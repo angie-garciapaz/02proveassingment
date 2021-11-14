@@ -4,21 +4,23 @@
   <body>
     <%- include('../includes/nav.ejs') %>
 
-      <main class="container d-flex justify-content-center">
-            <form class="border p-3 rounded w-50" action="/login" method="POST">
-              <h3>Login</h3>
-              <% if (errorMessage) {%>
-                <div class="text-danger small border border-danger p-2 w-50 rounded">
-                  <span><%= errorMessage %></span>
-                </div>
-                <%} %>
+      <main class="container">
+        <form class="border p-3 rounded" action="/login" method="POST">
+          <h3>Login</h3>
+          <% if (errorMessage) {%>
+            <div class="text-danger small border border-danger p-2 w-50 rounded">
+              <span>
+                <%= errorMessage %>
+              </span>
+            </div>
+            <%} %>
               <div class="form-group mt-4">
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input type="text" name="email" id="email" class="form-control">
               </div>
 
               <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password">Password:</label>
                 <input type="password" name="password" id="password" class="form-control">
               </div>
 
@@ -26,6 +28,10 @@
               <button class="addBtn" type="submit">
                 Login
               </button>
-            </form>
+        </form>
+        <br>
+
+        <a href="/reset" class="small text-center">Forgot Password?</a>
+
       </main>
       <%- include('../includes/end.ejs') %>

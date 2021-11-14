@@ -1,0 +1,24 @@
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://quiet-plains-82680.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/angie-garciapaz/02proveassingment
+
+3. Briefly list and describe the elements of the application that are functioning. 
+Everything works since nothing was added from the previous weeks.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+So far everything is working accordingly.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The coolest thing was being gifted extra time by you to work on the team project.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+The videos were simple and effective.
+
+7. Please select the category you feel best describes your assignment:
+
+   4 - Meets requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+Nothing was added and the project meets the requirements.
