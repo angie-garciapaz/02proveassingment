@@ -140,3 +140,7 @@ div#line1 {
 #logOut-btn:focus {
   outline: none;
 }
+
+input.invalid, textarea.invalid{
+  border-color: red;
+}
