@@ -1,63 +1,57 @@
-<nav class=" d-flex navbar navbar-expand-sm bg-dark flex-column">
-    <div class="d-flex justify-content-between w-100">
-        <a class="navbar-brand" href="/">
-            <img src="/images/logo.png" alt="AG Logo" style="width: 25px;">
-        </a>
+<nav class="navbar bg-dark  navbar-expand-lg">
+  <div class="nav-width">
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo.png" alt="AG Logo" style="width: 25px;">
+    </a>
 
-        <button id="btnMenu" onclick="buttonclick()">
-            <div id="line1"></div>
-            <div></div>
-            <div></div>
-        </button>
-    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars text-white"></i></span>
+    </button>
+  </div>
 
-    <div class="d-flex flex-column w-100 mt-2">
-        <ul id="menu" class="menuOff">
-            <li class="mt-2">
-                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav d-flex justify-content-between align-items-center collapse-width">
+      <li class="nav-item">
+        <a class="<%= path === '/' ? 'nav-link active' : '' %>" href="/">Shop</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="<%= path === '/products' ? 'nav-link active' : '' %>" href="/products">Products</a>
+      </li>
+
+      <% if (isAuthenticated) { %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Your Account
+          </a>
+
+          <div class="dropdown-menu dropdown-position" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/cart">Cart</a>
+            <a class="dropdown-item" href="/orders">Orders</a>
+            <a class="dropdown-item" href="/admin/add-product">Add
+              Product</a>
+            <a class="dropdown-item" href="/admin/products">Admin
+              Products</a>
+            <div class="dropdown-divider"></div>
+            <div class="logout-dropdown">
+              <form action="/logout" method="post">
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <button type="submit" id="logOut-btn">Logout</button>
+              </form>
+            </div>
+          </div>
+        </li>
+
+
+        <% } %>
+
+          <% if (!isAuthenticated) { %>
+            <li class="nav-item">
+              <a class="<%= path === '/login' ? 'nav-link active' : '' %>" href="/login">Login</a>
             </li>
-
-            <li>
-                <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
-            </li>
-
-            <% if (isAuthenticated) { %>
-                <li>
-                    <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
-                </li>
-
-                <li>
-                    <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
-                </li>
-
-                <li>
-                    <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add
-                        Product</a>
-                </li>
-
-                <li>
-                    <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin
-                        Products</a>
-                </li>
-
-                <li>
-                    <!-- make it look like a link. also an if user is logged in -->
-                    <form action="/logout" method="post">
-                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                        <button type="submit" id="logOut-btn">Logout</button>
-                    </form>
-                </li>
-                <% } %>
-
-                    <% if (!isAuthenticated) { %>
-                        <li>
-                            <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
-                        </li>
-
-                        <li>
-                            <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">Signup</a>
-                        </li>
-                        <% } %>
-        </ul>
-    </div>
+            <% } %>
+    </ul>
+  </div>
 </nav>

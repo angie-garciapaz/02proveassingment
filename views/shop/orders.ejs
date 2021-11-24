@@ -4,22 +4,40 @@
   <body>
     <%- include('../includes/nav.ejs')%>
       <main class="container">
-        <p>orders</p>
+
         <% if (orders.length <=0) { %>
           <h1>Nothing there!</h1>
           <% } else { %>
-            <ul class="orders">
+            <h3 class="mt-2">Thank you for placing your order!</h3>
+
+
+            <ul class="orders mt-4 ml-0 p-0" style="list-style: none;">
+
               <% orders.forEach(order=> { %>
-                <li class="orders__item">
-                  <h1>Order - # <%= order._id %>
-                  </h1>
-                  <ul class="orders__products">
-                    <% order.products.forEach(p=> { %>
-                      <li class="orders__products-item">
-                        <%= p.product.title %> (<%= p.quantity %>)
-                      </li>
-                      <% }); %>
-                  </ul>
+                <hr>
+                <li>
+                  <p class="font-weight-bold">Order Details </p>
+                  <p class="small">Order # <%= order._id %>
+                  </p>
+
+                  <% order.products.forEach(p=> { %>
+                    <div class="row mb-5">
+                      <div class="col-6">
+                        <img src=" <%= p.product.imageUrl %>" alt="<%= p.product.title %>" style="width: 175px;">
+
+                      </div>
+                      <div class="col-6">
+                        <p>
+                          <%= p.product.title %>
+                        </p>
+                        <p> Qty: <%= p.quantity %>
+                        </p>
+                      </div>
+                    </div>
+
+                    <% }); %>
+
+
                 </li>
                 <% }); %>
             </ul>

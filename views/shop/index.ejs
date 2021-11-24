@@ -4,37 +4,39 @@
   <body>
     <%- include('../includes/nav.ejs')%>
       <main class="container">
-        <h3>My Products - Index</h1>
+        <h3>Best Sellers</h3>
           <hr>
           <% if (prods.length> 0){ %>
             <div class="row">
               <% for (let product of prods) {%>
-                <div class="col-sm-6 col-lg-4 mb-3">
-                  <article class="card">
-                    <header class="card-header">
-                      <h1 class="card-title">
-                        <%= product.title %>
-                      </h1>
-                    </header>
-                    <img src=" <%= product.imageUrl %>" alt="<%= product.title %>" class="card-img-top">
+                <div class="col-sm-6 col-lg-3 mb-3">
+                  <a href="/products/<%= product._id %>" class="product-detail">
+                    <article class="card border-0">
 
-                    <div class="card-body">
-                      <h2>$<%= product.price %>
-                      </h2>
-                      <p>
-                        <%= product.description %>
-                      </p>
-                    </div>
+                      <img src=" <%= product.imageUrl %>" alt="<%= product.title %>" class="card-img-top">
 
-                    <div class="card-footer text-center bg-white border-top-0 d-flex justify-content-around">
-                      <a href="/products/<%= product._id %>" class="detBtn">Details</a>
-                      <% if (isAuthenticated) { %>
-                        <%- include('../includes/add-to-cart.ejs', {product: product})%>
-                          <% } %>
-                    </div>
+                      <div class="card-body">
+                        <div class="product-title">
+                          <%= product.title %>
+                        </div>
+
+                        <p class="prod-desc">
+                          <%= product.description %>
+                        </p>
+                        <p class="prod-price">$<%= product.price %>
+                        </p>
+                      </div>
+
+                      <div class="card-footer text-center bg-white border-top-0 d-flex justify-content-around">
+
+                        <% if (isAuthenticated) { %>
+                          <%- include('../includes/add-to-cart.ejs', {product: product})%>
+                            <% } %>
+                      </div>
                 </div>
                 <% } %>
                   </article>
+                  </a>
             </div>
 
             <% } else { %>

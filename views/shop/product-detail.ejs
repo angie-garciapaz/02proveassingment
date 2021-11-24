@@ -4,29 +4,37 @@
   <body>
     <%- include('../includes/nav.ejs')%>
       <main class="container">
-        <div class="row">
-          <div class="col">
-            <h1>
-              <%= product.title %>
-            </h1>
+
+        <div class="row mb-5">
+          <div class="col-12">
+            <a href="#" onclick="backBtn()" class="back-btn small">
+              <i class="fas fa-chevron-left"></i> Previous Page
+            </a>
           </div>
         </div>
-        <hr>
-        <div class="row">
-          <div class="col-6">
-            <img src="<%= product.imageUrl %>" alt="<%= product.title %>" style="width: 500px;">
+
+
+        <div class="row m-4">
+          <div class="col-xl-6 col-md-8">
+            <img src="<%= product.imageUrl %>" alt="<%= product.title %>" class="prod-detail-image">
 
           </div>
-          <div class="col-6 text-center d-flex align-items-center flex-column justify-content-center">
-            <h2>
-              <%= product.price %>
-            </h2>
-            <p>
+          <div class="col-xl-6 col-md-4">
+            <div class="product-title">
+              <%= product.title %>
+            </div>
+            <div class="border border-top border-light">
+            </div>
+            <div class="prod-desc">
               <%= product.description %>
-            </p>
+            </div>
+            <div class="prod-price">
+              <%= product.price %>
+            </div>
             <% if (isAuthenticated) { %>
+              <div class="mt-5">
               <%- include('../includes/add-to-cart.ejs', {product: product})%>
-              <% } %>
+                <% } %></div>
           </div>
         </div>
 

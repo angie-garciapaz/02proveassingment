@@ -1,54 +1,57 @@
 <%- include('../includes/head.ejs') %>
-</head>
+  </head>
 
   <body>
     <%- include('../includes/nav.ejs')%>
       <main class="container">
-        <h3>My Products</h1>
-          <hr>
-          <% if (prods.length> 0){ %>
-            <div class="row">
+        <h3>My Products</h3>
+        <hr>
+        <% if (prods.length> 0){ %>
+          <div class="row">
+            <% for (let product of prods) {%>
 
-              <% for (let product of prods) {%>
-                <div class="col-4 mb-3">
-                  <article class="card">
+              <div class="col-md-4 col-xs-6 col-lg-3 mb-3">
+
+                <article class="card border-0">
+                  <a href="/products/<%= product._id %>" class="product-detail">
                     <img src=" <%= product.imageUrl %>" alt="<%= product.title %>" class="card-img-top">
 
-                    <header class="card-header">
-                      <h1 class="card-title">
-                        <%= product.title %>
-                      </h1>
-                    </header>
-
                     <div class="card-body">
-                      <h2>
-                        $<%= product.price %>
-                      </h2>
-                      <p>
+                      <div class="product-title">
+                        <%= product.title %>
+                      </div>
+
+                      <p class="prod-desc">
                         <%= product.description %>
-                    </div>
+                      </p>
+                      <div class="prod-price">
+                        $<%= product.price %>
+                      </div>
 
-                    <div class="card-footer d-flex justify-content-around bg-white border-top-0">
-                      <a href="/products/<%= product._id %>" class="detBtn">Details</a>
-                      <% if (isAuthenticated) { %>
+                    </div>
+                  </a>
+                  <div class="card-footer d-flex justify-content-around bg-white border-top-0">
+
+                    <% if (isAuthenticated) { %>
                       <%- include('../includes/add-to-cart.ejs', {product: product})%>
-                      <% } %>
-                    </div>
-                </div>
-                <% } %>
-                  </article>
-            </div>
-
-            <% } else { %>
-
-              <div class="container">
-                <div class="jumbotron">
-                  <h1>Oops!</h1>
-                  <p>There are no current books listed. Let's add some!</p>
-                  <a class="addBtn" href="../admin/add-product">Add Product</a>
-                </div>
+                        <% } %>
+                  </div>
               </div>
               <% } %>
+                </article>
+
+          </div>
+
+          <% } else { %>
+
+            <div class="container">
+              <div class="jumbotron">
+                <h1>Oops!</h1>
+                <p>There are no current books listed. Let's add some!</p>
+                <a class="addBtn" href="../admin/add-product">Add Product</a>
+              </div>
+            </div>
+            <% } %>
 
       </main>
       <%- include('../includes/end.ejs')%>

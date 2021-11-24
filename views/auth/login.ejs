@@ -5,7 +5,8 @@
     <%- include('../includes/nav.ejs') %>
 
       <main class="container">
-        <form class="border p-3 rounded" action="/login" method="POST">
+        <div class="d-flex align-items-center flex-column mt-5">
+        <form class="border p-3 rounded w-50" action="/login" method="POST" >
           <h3>Login</h3>
           <% if (errorMessage) {%>
             <div class="text-danger small border border-danger p-2 w-50 rounded">
@@ -29,13 +30,18 @@
               </div>
 
               <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-              <button class="addBtn" type="submit">
+              <button class="addBtn w-100" type="submit">
                 Login
               </button>
         </form>
         <br>
 
-        <a href="/reset" class="small text-center">Forgot Password?</a>
+        <a href="/reset" class="small text-center forgot-password-text">Forgot Password?</a>
 
+        <div class="w-100 border border-top border-light my-3">
+        </div>
+
+        <a href="/signup" class="create-account-btn small">Create an Account</a>
+</div>
       </main>
       <%- include('../includes/end.ejs') %>
